@@ -13,7 +13,7 @@
 			<h1>Добро пожаловать в StudentID</h1>
 		</div>
 		<main class="layout__main">
-			<form class="form">
+			<form class="form" data-type="register" data-visible="true">
 				<h4 class="form__title">Регистрация</h4>
 				<div class="form__content">
 					<input type="text" class="form-control" placeholder="Код приглашения">
@@ -23,7 +23,29 @@
 					<button type="submit" class="form-control">Зарегистрироваться</button>
 				</div>
 				<div class="form__footer">
-					<button class="button-link">Есть аккаунт?</button>
+					<button class="button-link" data-type-open="auth">Есть аккаунт?</button>
+				</div>
+			</form>
+			<form class="form" data-type="auth">
+				<h4 class="form__title">Вход</h4>
+				<div class="form__content">
+					<input type="email" class="form-control" placeholder="Почта">
+					<input type="password" class="form-control" placeholder="Пароль">
+					<button type="submit" class="form-control">Войти</button>
+				</div>
+				<div class="form__footer">
+					<button class="button-link" data-type-open="register">Нет аккаунта?</button>
+					<button class="button-link" data-type-open="restore-password">Забыли пароль?</button>
+				</div>
+			</form>
+			<form class="form" data-type="restore-password">
+				<h4 class="form__title">Восстановление пароля</h4>
+				<div class="form__content">
+					<input type="email" class="form-control" placeholder="Почта">
+					<button type="submit" class="form-control">Восстановить пароль</button>
+				</div>
+				<div class="form__footer">
+					<button class="button-link" data-type-open="register">Обратно</button>
 				</div>
 			</form>
 		</main>

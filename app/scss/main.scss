@@ -1,5 +1,13 @@
 @import 'config';
 
+[data-type] {
+    display: none;
+}
+
+[data-visible] {
+    display: block;
+}
+
 // layout
 
 .layout {
