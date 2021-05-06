@@ -8,6 +8,12 @@
     display: block;
 }
 
+// logo
+
+.logo {
+    color: $accent;
+}
+
 // layout
 
 .layout {
@@ -117,6 +123,7 @@ ion-icon {
 }
 
 select.form-control {
+    max-width: 14rem;
     border-radius: $bdrs-sm;
     cursor: pointer;
 
